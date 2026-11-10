@@ -16,7 +16,7 @@ ARG USER_GID=1000
 ##################################################
 # The image tag is specified in the argument itself.
 # hadolint ignore=DL3006
-FROM ${MOVEIT_PRO_BASE_IMAGE} AS base
+FROM docker-registry.qualcomm.com/library/picknikciuser/moveit-pro:10.2.0-jazzy-qnn AS base
 
 # Create a non-root user
 ARG USERNAME
